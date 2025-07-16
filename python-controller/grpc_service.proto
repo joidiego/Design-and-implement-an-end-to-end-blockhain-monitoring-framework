@@ -1,0 +1,26 @@
+syntax = "proto3";
+
+package blockchain;
+
+message Signature {
+    string r = 1;
+    string s = 2;
+    uint64 block_height = 3;
+    string txid = 4;
+}
+
+message Anomaly {
+    Signature signature = 1;
+    double entropy_r = 2;
+    double entropy_s = 3;
+    string timestamp = 4;
+}
+
+service AnomalyService {
+    rpc ReportAnomaly(stream Anomaly) returns (AnomalyResponse);
+}
+
+message AnomalyResponse {
+    bool success = 1;
+    string message = 2;
+}
