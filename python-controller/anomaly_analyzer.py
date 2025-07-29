@@ -5,6 +5,7 @@ from ml_model import OnlineAnomalyModel
 
 logging.basicConfig(level=logging.INFO)
 
+# Inisialisasi model
 model = OnlineAnomalyModel()
 
 def process_anomaly(anomaly):
@@ -14,14 +15,12 @@ def process_anomaly(anomaly):
     block_height = anomaly.signature.block_height
     timestamp = anomaly.timestamp or datetime.utcnow().isoformat()
 
-    # Tambahkan ke model
+    # Tambahkan ke model untuk pelatihan
     model.add_data_point(r, s)
 
-    # Prediksi apakah ini benar-benar anomali
-    is_ml_anomaly = model.predict(r, s)
-
-    if is_ml_anomaly:
-        logging.info(f"ML Detected Anomaly: {txid}")
+    # Deteksi apakah ini anomali
+    if model.predict(r, s):
+        logging.info(f"ML Anomaly Detected: TXID={txid}, r={r}, s={s}")
         write_anomaly_to_influx(
             txid=txid,
             r=r,

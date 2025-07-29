@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Blockchain Anomaly Monitor</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background: #f4f4f4;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .chart-container {
+            height: 300px;
+            margin: 20px 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        th,
+        td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background: #007BFF;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>📊 Blockchain Anomaly Monitor</h1>
+
+        <h2>📉 Entropi Tanda Tangan (r, s)</h2>
+        <div class="chart-container">
+            <canvas id="entropyChart"></canvas>
+        </div>
+
+        <h2>🚨 Anomali Terdeteksi</h2>
+        <table id="anomaliesTable">
+            <tr>
+                <th>TXID</th>
+                <th>r</th>
+                <th>s</th>
+                <th>Blok</th>
+                <th>Waktu</th>
+            </tr>
+        </table>
+
+        <h2>📈 Jumlah Anomali per Blok</h2>
+        <div class="chart-container">
+            <canvas id="countChart"></canvas>
+        </div>
+    </div>
+
+    <script>
+        // Entropi Chart
+        const entropyCtx = document.getElementById('entropyChart').getContext('2d');
+        const entropyChart = new Chart(entropyCtx, {
+            type: 'line',
+            data: {
+                labels: [],
+                datasets: [
+                    {
+                        label: 'Entropi r',
+                        data: [],
+                        borderColor: 'rgba(255, 99, 132, 1)',
+                        tension: 0.1
+                    },
+                    {
+                        label: 'Entropi s',
+                        data: [],
+                        borderColor: 'rgba(54, 162, 235, 1)',
+                        tension: 0.1
+                    }
+                ]
+            }
+        });
+
+        // Count Chart
+        const countCtx = document.getElementById('countChart').getContext('2d');
+        const countChart = new Chart(countCtx, {
+            type: 'bar',
+            data: {
+                labels: [],
+                datasets: [{
+                    label: 'Jumlah Anomali',
+                    data: [],
+                    backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                    borderColor: 'rgba(75, 192, 192, 1)',
+                    borderWidth: 1
+                }]
+            }
+        });
+
+        // Ambil data dari API
+        async function fetchData() {
+            const anomalies = await (await fetch('/anomalies')).json();
+            const counts = await (await fetch('/count')).json();
+
+            // Update tabel
+            const table = document.getElementById('anomaliesTable');
+            table.innerHTML = `<tr><th>TXID</th><th>r</th><th>s</th><th>Blok</th><th>Waktu</th></tr>`;
+            anomalies.slice(0, 10).forEach(anom => {
+                const row = table.insertRow();
+                row.innerHTML = `<td>${anom.txid}</td><td>${anom.r}</td><td>${anom.s}</td><td>${anom.block}</td><td>${anom.time}</td>`;
+            });
+
+            // Update entropi chart
+            const times = anomalies.slice(-50).map(a => new Date(a.time).toLocaleTimeString());
+            const r_entropy = anomalies.slice(-50).map(a => a.entropy_r);
+            const s_entropy = anomalies.slice(-50).map(a => a.entropy_s);
+
+            entropyChart.data.labels = times;
+            entropyChart.data.datasets[0].data = r_entropy;
+            entropyChart.data.datasets[1].data = s_entropy;
+            entropyChart.update();
+
+            // Update count chart
+            countChart.data.labels = ['Anomali'];
+            countChart.data.datasets[0].data = [counts.count];
+            countChart.update();
+        }
+
+        // Refresh tiap 5 detik
+        setInterval(fetchData, 5000);
+        fetchData();
+    </script>
+</body>
+
+</html>

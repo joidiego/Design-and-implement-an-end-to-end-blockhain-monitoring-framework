@@ -1,0 +1,852 @@
+
+
+
+
+
+2025-07-28T04:21:33Z Bitcoin Core version v24.0.1 (release build)
+2025-07-28T04:21:33Z Using the 'sse4(1way),sse41(4way),avx2(8way)' SHA256 implementation
+2025-07-28T04:21:33Z Using RdSeed as an additional entropy source
+2025-07-28T04:21:33Z Using RdRand as an additional entropy source
+2025-07-28T04:21:33Z Default data directory /home/bitcoin/.bitcoin
+2025-07-28T04:21:33Z Using data directory /home/bitcoin/.bitcoin
+2025-07-28T04:21:33Z Config file: /home/bitcoin/.bitcoin/bitcoin.conf (not found, skipping)
+2025-07-28T04:21:33Z Command-line arg: datadir="/home/bitcoin/.bitcoin"
+2025-07-28T04:21:33Z Command-line arg: printtoconsole=""
+2025-07-28T04:21:33Z Using at most 125 automatic connections (1048576 file descriptors available)
+2025-07-28T04:21:33Z Using 16 MiB out of 16 MiB requested for signature cache, able to store 524288 elements
+2025-07-28T04:21:34Z Using 16 MiB out of 16 MiB requested for script execution cache, able to store 524288 elements
+2025-07-28T04:21:34Z Script verification uses 7 additional threads
+2025-07-28T04:21:34Z scheduler thread start
+2025-07-28T04:21:34Z [libevent:warning] getaddrinfo: address family for nodename not supported
+2025-07-28T04:21:34Z Binding RPC on address ::1 port 8332 failed.
+2025-07-28T04:21:34Z [http] creating work queue of depth 16
+2025-07-28T04:21:34Z Using random cookie authentication.
+2025-07-28T04:21:34Z Generated RPC authentication cookie /home/bitcoin/.bitcoin/.cookie
+2025-07-28T04:21:34Z [http] starting 4 worker threads
+2025-07-28T04:21:34Z Using wallet directory /home/bitcoin/.bitcoin
+2025-07-28T04:21:34Z init message: Verifying wallet(s)…
+2025-07-28T04:21:34Z Using /16 prefix for IP bucketing
+2025-07-28T04:21:34Z init message: Loading P2P addresses…
+2025-07-28T04:21:34Z Creating peers.dat because the file was not found ("/home/bitcoin/.bitcoin/peers.dat")
+2025-07-28T04:21:34Z init message: Loading banlist…
+2025-07-28T04:21:34Z Recreating the banlist database
+2025-07-28T04:21:34Z SetNetworkActive: true
+2025-07-28T04:21:34Z Failed to read fee estimates from /home/bitcoin/.bitcoin/fee_estimates.dat. Continue anyway.
+2025-07-28T04:21:34Z Cache configuration:
+2025-07-28T04:21:34Z * Using 2.0 MiB for block index database
+2025-07-28T04:21:34Z * Using 8.0 MiB for chain state database
+2025-07-28T04:21:34Z * Using 440.0 MiB for in-memory UTXO set (plus up to 286.1 MiB of unused mempool space)
+2025-07-28T04:21:34Z init message: Loading block index…
+2025-07-28T04:21:34Z Assuming ancestors of block 00000000000000000009c97098b5295f7e5f183ac811fb5d1534040adb93cabd have valid signatures.
+2025-07-28T04:21:34Z Setting nMinimumChainWork=00000000000000000000000000000000000000003404ba0801921119f903495e
+2025-07-28T04:21:34Z Switching active chainstate to Chainstate [ibd] @ height -1 (null)
+2025-07-28T04:21:34Z Opening LevelDB in /home/bitcoin/.bitcoin/blocks/index
+2025-07-28T04:21:34Z Opened LevelDB successfully
+2025-07-28T04:21:34Z Using obfuscation key for /home/bitcoin/.bitcoin/blocks/index: 0000000000000000
+2025-07-28T04:21:34Z LoadBlockIndexDB: last block file = 0
+2025-07-28T04:21:34Z LoadBlockIndexDB: last block file info: CBlockFileInfo(blocks=0, size=0, heights=0...0, time=1970-01-01...1970-01-01)
+2025-07-28T04:21:34Z Checking all blk files are present...
+2025-07-28T04:21:34Z Initializing databases...
+2025-07-28T04:21:36Z Opening LevelDB in /home/bitcoin/.bitcoin/chainstate
+2025-07-28T04:21:36Z Opened LevelDB successfully
+2025-07-28T04:21:36Z Wrote new obfuscate key for /home/bitcoin/.bitcoin/chainstate: 1be74abda54c3ce5
+2025-07-28T04:21:36Z Using obfuscation key for /home/bitcoin/.bitcoin/chainstate: 1be74abda54c3ce5
+2025-07-28T04:21:36Z init message: Verifying blocks…
+2025-07-28T04:21:36Z  block index            2012ms
+2025-07-28T04:21:36Z Setting NODE_NETWORK on non-prune mode
+2025-07-28T04:21:36Z loadblk thread start
+2025-07-28T04:21:36Z UpdateTip: new best=000000000019d6689c085ae165831e934ff763ae46a2a6c172b3f1b60a8ce26f height=0 version=0x00000001 log2_work=32.000022 tx=1 date='2009-01-03T18:15:05Z' progress=0.000000 cache=0.0MiB(0txo)
+2025-07-28T04:21:36Z block tree size = 1
+2025-07-28T04:21:36Z nBestHeight = 0
+2025-07-28T04:21:36Z Failed to open mempool file from disk. Continuing anyway.
+2025-07-28T04:21:36Z loadblk thread exit
+2025-07-28T04:21:36Z torcontrol thread start
+2025-07-28T04:21:36Z Bound to 127.0.0.1:8334
+2025-07-28T04:21:36Z Bound to [::]:8333
+2025-07-28T04:21:36Z Bound to 0.0.0.0:8333
+2025-07-28T04:21:36Z 0 block-relay-only anchors will be tried for connections.
+2025-07-28T04:21:36Z init message: Starting network threads…
+2025-07-28T04:21:36Z net thread start
+2025-07-28T04:21:36Z init message: Done loading
+2025-07-28T04:21:36Z opencon thread start
+2025-07-28T04:21:36Z dnsseed thread start
+2025-07-28T04:21:36Z Loading addresses from DNS seed seed.bitcoin.jonasschnelli.ch.
+2025-07-28T04:21:36Z msghand thread start
+2025-07-28T04:21:36Z addcon thread start
+2025-07-28T04:21:36Z Loading addresses from DNS seed dnsseed.bluematt.me.
+2025-07-28T04:21:37Z Loading addresses from DNS seed seed.bitcoin.wiz.biz.
+2025-07-28T04:21:38Z New outbound peer connected: version: 70016, blocks=907513, peer=0 (outbound-full-relay)
+2025-07-28T04:21:38Z Loading addresses from DNS seed seed.btc.petertodd.org.
+2025-07-28T04:21:38Z New outbound peer connected: version: 70016, blocks=907513, peer=1 (outbound-full-relay)
+2025-07-28T04:21:40Z Pre-synchronizing blockheaders, height: 2000 (~0.23%)
+2025-07-28T04:21:41Z Loading addresses from DNS seed dnsseed.emzy.de.
+2025-07-28T04:21:41Z Pre-synchronizing blockheaders, height: 4000 (~0.46%)
+2025-07-28T04:21:41Z Loading addresses from DNS seed seed.bitcoinstats.com.
+2025-07-28T04:21:42Z Loading addresses from DNS seed seed.bitcoin.sipa.be.
+2025-07-28T04:21:43Z Pre-synchronizing blockheaders, height: 6000 (~0.69%)
+2025-07-28T04:21:44Z Loading addresses from DNS seed dnsseed.bitcoin.dashjr.org.
+2025-07-28T04:21:44Z New outbound peer connected: version: 70016, blocks=907513, peer=2 (outbound-full-relay)
+2025-07-28T04:21:44Z Pre-synchronizing blockheaders, height: 8000 (~0.92%)
+2025-07-28T04:21:45Z Loading addresses from DNS seed seed.bitcoin.sprovoost.nl.
+2025-07-28T04:21:45Z 208 addresses found from DNS seeds
+2025-07-28T04:21:45Z dnsseed thread exit
+2025-07-28T04:21:46Z Pre-synchronizing blockheaders, height: 10000 (~1.15%)
+2025-07-28T04:21:50Z Pre-synchronizing blockheaders, height: 12000 (~1.38%)
+2025-07-28T04:21:52Z Pre-synchronizing blockheaders, height: 14000 (~1.62%)
+2025-07-28T04:21:53Z Pre-synchronizing blockheaders, height: 16000 (~1.85%)
+2025-07-28T04:21:55Z Pre-synchronizing blockheaders, height: 18000 (~2.08%)
+2025-07-28T04:21:57Z Pre-synchronizing blockheaders, height: 20000 (~2.32%)
+2025-07-28T04:21:59Z Pre-synchronizing blockheaders, height: 22000 (~2.56%)
+2025-07-28T04:22:01Z New outbound peer connected: version: 70016, blocks=907513, peer=3 (outbound-full-relay)
+2025-07-28T04:22:01Z Pre-synchronizing blockheaders, height: 24000 (~2.80%)
+2025-07-28T04:22:01Z New outbound peer connected: version: 70016, blocks=907513, peer=4 (outbound-full-relay)
+2025-07-28T04:22:02Z Pre-synchronizing blockheaders, height: 26000 (~3.04%)
+2025-07-28T04:22:03Z New outbound peer connected: version: 70016, blocks=907513, peer=5 (outbound-full-relay)
+2025-07-28T04:22:04Z Pre-synchronizing blockheaders, height: 28000 (~3.29%)
+2025-07-28T04:22:06Z Pre-synchronizing blockheaders, height: 30000 (~3.52%)
+2025-07-28T04:22:07Z New outbound peer connected: version: 70016, blocks=907513, peer=6 (outbound-full-relay)
+2025-07-28T04:22:08Z Pre-synchronizing blockheaders, height: 32000 (~3.76%)
+2025-07-28T04:22:10Z New outbound peer connected: version: 70016, blocks=907513, peer=8 (outbound-full-relay)
+2025-07-28T04:22:10Z Pre-synchronizing blockheaders, height: 34000 (~3.99%)
+2025-07-28T04:22:12Z Pre-synchronizing blockheaders, height: 36000 (~4.23%)
+2025-07-28T04:22:12Z New outbound peer connected: version: 70016, blocks=907513, peer=9 (block-relay-only)
+2025-07-28T04:22:12Z New outbound peer connected: version: 70016, blocks=907513, peer=10 (block-relay-only)
+2025-07-28T04:22:14Z Pre-synchronizing blockheaders, height: 38000 (~4.46%)
+2025-07-28T04:22:15Z Pre-synchronizing blockheaders, height: 40000 (~4.69%)
+2025-07-28T04:22:17Z Pre-synchronizing blockheaders, height: 42000 (~4.92%)
+2025-07-28T04:22:20Z Pre-synchronizing blockheaders, height: 44000 (~5.15%)
+2025-07-28T04:22:22Z Pre-synchronizing blockheaders, height: 46000 (~5.39%)
+2025-07-28T04:22:24Z Pre-synchronizing blockheaders, height: 48000 (~5.62%)
+2025-07-28T04:22:26Z Pre-synchronizing blockheaders, height: 50000 (~5.85%)
+2025-07-28T04:22:28Z Pre-synchronizing blockheaders, height: 52000 (~6.08%)
+2025-07-28T04:22:29Z Pre-synchronizing blockheaders, height: 54000 (~6.31%)
+2025-07-28T04:22:31Z Pre-synchronizing blockheaders, height: 56000 (~6.55%)
+2025-07-28T04:22:33Z Pre-synchronizing blockheaders, height: 58000 (~6.78%)
+2025-07-28T04:22:35Z Pre-synchronizing blockheaders, height: 60000 (~7.01%)
+2025-07-28T04:22:36Z Pre-synchronizing blockheaders, height: 62000 (~7.24%)
+2025-07-28T04:22:38Z Pre-synchronizing blockheaders, height: 64000 (~7.47%)
+2025-07-28T04:22:40Z Pre-synchronizing blockheaders, height: 66000 (~7.70%)
+2025-07-28T04:22:42Z Pre-synchronizing blockheaders, height: 68000 (~7.92%)
+2025-07-28T04:22:43Z Pre-synchronizing blockheaders, height: 70000 (~8.14%)
+2025-07-28T04:22:45Z Pre-synchronizing blockheaders, height: 72000 (~8.37%)
+2025-07-28T04:22:47Z Pre-synchronizing blockheaders, height: 74000 (~8.60%)
+2025-07-28T04:22:49Z Pre-synchronizing blockheaders, height: 76000 (~8.83%)
+2025-07-28T04:22:51Z Pre-synchronizing blockheaders, height: 78000 (~9.05%)
+2025-07-28T04:22:54Z New outbound peer connected: version: 70016, blocks=907513, peer=11 (outbound-full-relay)
+2025-07-28T04:22:55Z Pre-synchronizing blockheaders, height: 80000 (~9.28%)
+2025-07-28T04:22:57Z Pre-synchronizing blockheaders, height: 82000 (~9.51%)
+2025-07-28T04:24:31Z Pre-synchronizing blockheaders, height: 84000 (~9.74%)
+2025-07-28T04:24:35Z Pre-synchronizing blockheaders, height: 86000 (~9.96%)
+2025-07-28T04:24:35Z New outbound peer connected: version: 70016, blocks=907513, peer=12 (outbound-full-relay)
+2025-07-28T04:24:36Z Pre-synchronizing blockheaders, height: 88000 (~10.19%)
+2025-07-28T04:24:38Z New outbound peer connected: version: 70016, blocks=907513, peer=13 (outbound-full-relay)
+2025-07-28T04:24:38Z Pre-synchronizing blockheaders, height: 90000 (~10.41%)
+2025-07-28T04:24:40Z Pre-synchronizing blockheaders, height: 92000 (~10.63%)
+2025-07-28T04:24:42Z Pre-synchronizing blockheaders, height: 94000 (~10.86%)
+2025-07-28T04:24:44Z Pre-synchronizing blockheaders, height: 96000 (~11.08%)
+2025-07-28T04:24:46Z Pre-synchronizing blockheaders, height: 98000 (~11.31%)
+2025-07-28T04:24:47Z Pre-synchronizing blockheaders, height: 100000 (~11.54%)
+2025-07-28T04:24:49Z Pre-synchronizing blockheaders, height: 102000 (~11.77%)
+2025-07-28T04:24:51Z Pre-synchronizing blockheaders, height: 104000 (~11.99%)
+2025-07-28T04:24:53Z Pre-synchronizing blockheaders, height: 106000 (~12.22%)
+2025-07-28T04:24:55Z Pre-synchronizing blockheaders, height: 108000 (~12.44%)
+2025-07-28T04:24:57Z Pre-synchronizing blockheaders, height: 110000 (~12.66%)
+2025-07-28T04:24:58Z Pre-synchronizing blockheaders, height: 112000 (~12.88%)
+2025-07-28T04:25:00Z New outbound peer connected: version: 70016, blocks=907513, peer=14 (outbound-full-relay)
+2025-07-28T04:25:00Z Pre-synchronizing blockheaders, height: 114000 (~13.11%)
+2025-07-28T04:25:02Z Pre-synchronizing blockheaders, height: 116000 (~13.34%)
+2025-07-28T04:25:04Z Pre-synchronizing blockheaders, height: 118000 (~13.57%)
+2025-07-28T04:25:07Z Pre-synchronizing blockheaders, height: 120000 (~13.79%)
+2025-07-28T04:25:09Z Pre-synchronizing blockheaders, height: 122000 (~14.02%)
+2025-07-28T04:25:11Z Pre-synchronizing blockheaders, height: 124000 (~14.23%)
+2025-07-28T04:25:13Z Pre-synchronizing blockheaders, height: 126000 (~14.45%)
+2025-07-28T04:25:15Z Pre-synchronizing blockheaders, height: 128000 (~14.67%)
+2025-07-28T04:25:16Z Pre-synchronizing blockheaders, height: 130000 (~14.89%)
+2025-07-28T04:25:18Z Pre-synchronizing blockheaders, height: 132000 (~15.11%)
+2025-07-28T04:25:20Z Pre-synchronizing blockheaders, height: 134000 (~15.32%)
+2025-07-28T04:25:22Z Pre-synchronizing blockheaders, height: 136000 (~15.55%)
+2025-07-28T04:25:24Z Pre-synchronizing blockheaders, height: 138000 (~15.78%)
+2025-07-28T04:25:26Z Pre-synchronizing blockheaders, height: 140000 (~16.00%)
+2025-07-28T04:25:28Z Pre-synchronizing blockheaders, height: 142000 (~16.23%)
+2025-07-28T04:25:28Z New outbound peer connected: version: 70016, blocks=907513, peer=15 (block-relay-only)
+2025-07-28T04:25:33Z Pre-synchronizing blockheaders, height: 144000 (~16.46%)
+2025-07-28T04:25:35Z Pre-synchronizing blockheaders, height: 146000 (~16.69%)
+2025-07-28T04:25:36Z Pre-synchronizing blockheaders, height: 148000 (~16.92%)
+2025-07-28T04:25:38Z Pre-synchronizing blockheaders, height: 150000 (~17.16%)
+2025-07-28T04:25:42Z Pre-synchronizing blockheaders, height: 152000 (~17.39%)
+2025-07-28T04:25:43Z Pre-synchronizing blockheaders, height: 154000 (~17.62%)
+2025-07-28T04:25:45Z Pre-synchronizing blockheaders, height: 156000 (~17.85%)
+2025-07-28T04:25:47Z Pre-synchronizing blockheaders, height: 158000 (~18.08%)
+2025-07-28T04:25:49Z Pre-synchronizing blockheaders, height: 160000 (~18.31%)
+2025-07-28T04:25:50Z Pre-synchronizing blockheaders, height: 162000 (~18.53%)
+2025-07-28T04:25:52Z Pre-synchronizing blockheaders, height: 164000 (~18.76%)
+2025-07-28T04:25:53Z Pre-synchronizing blockheaders, height: 166000 (~18.99%)
+2025-07-28T04:25:55Z Pre-synchronizing blockheaders, height: 168000 (~19.22%)
+2025-07-28T04:25:57Z Pre-synchronizing blockheaders, height: 170000 (~19.44%)
+2025-07-28T04:25:58Z Pre-synchronizing blockheaders, height: 172000 (~19.67%)
+2025-07-28T04:26:00Z Pre-synchronizing blockheaders, height: 174000 (~19.90%)
+2025-07-28T04:26:02Z Pre-synchronizing blockheaders, height: 176000 (~20.13%)
+2025-07-28T04:26:03Z Pre-synchronizing blockheaders, height: 178000 (~20.36%)
+2025-07-28T04:26:05Z Pre-synchronizing blockheaders, height: 180000 (~20.58%)
+2025-07-28T04:26:06Z Pre-synchronizing blockheaders, height: 182000 (~20.81%)
+2025-07-28T04:26:08Z Pre-synchronizing blockheaders, height: 184000 (~21.04%)
+2025-07-28T04:26:10Z Pre-synchronizing blockheaders, height: 186000 (~21.27%)
+2025-07-28T04:26:13Z Pre-synchronizing blockheaders, height: 188000 (~21.49%)
+2025-07-28T04:26:15Z Pre-synchronizing blockheaders, height: 190000 (~21.72%)
+2025-07-28T04:26:16Z Pre-synchronizing blockheaders, height: 192000 (~21.95%)
+2025-07-28T04:26:18Z Pre-synchronizing blockheaders, height: 194000 (~22.17%)
+2025-07-28T04:26:19Z Pre-synchronizing blockheaders, height: 196000 (~22.39%)
+2025-07-28T04:26:21Z Pre-synchronizing blockheaders, height: 198000 (~22.62%)
+2025-07-28T04:26:23Z Pre-synchronizing blockheaders, height: 200000 (~22.84%)
+2025-07-28T04:26:25Z Pre-synchronizing blockheaders, height: 202000 (~23.07%)
+2025-07-28T04:26:27Z Pre-synchronizing blockheaders, height: 204000 (~23.30%)
+2025-07-28T04:26:29Z Pre-synchronizing blockheaders, height: 206000 (~23.52%)
+2025-07-28T04:26:31Z Pre-synchronizing blockheaders, height: 208000 (~23.75%)
+2025-07-28T04:26:32Z Pre-synchronizing blockheaders, height: 210000 (~23.97%)
+2025-07-28T04:26:34Z Pre-synchronizing blockheaders, height: 212000 (~24.20%)
+2025-07-28T04:26:36Z Pre-synchronizing blockheaders, height: 214000 (~24.44%)
+2025-07-28T04:26:38Z Pre-synchronizing blockheaders, height: 216000 (~24.66%)
+2025-07-28T04:26:40Z Pre-synchronizing blockheaders, height: 218000 (~24.90%)
+2025-07-28T04:26:44Z Pre-synchronizing blockheaders, height: 220000 (~25.12%)
+2025-07-28T04:26:47Z Pre-synchronizing blockheaders, height: 222000 (~25.34%)
+2025-07-28T04:26:49Z Pre-synchronizing blockheaders, height: 224000 (~25.56%)
+2025-07-28T04:26:50Z Pre-synchronizing blockheaders, height: 226000 (~25.78%)
+2025-07-28T04:26:52Z Pre-synchronizing blockheaders, height: 228000 (~26.00%)
+2025-07-28T04:26:54Z Pre-synchronizing blockheaders, height: 230000 (~26.22%)
+2025-07-28T04:26:56Z Pre-synchronizing blockheaders, height: 232000 (~26.43%)
+2025-07-28T04:26:57Z Pre-synchronizing blockheaders, height: 234000 (~26.66%)
+2025-07-28T04:26:59Z Pre-synchronizing blockheaders, height: 236000 (~26.88%)
+2025-07-28T04:27:01Z Pre-synchronizing blockheaders, height: 238000 (~27.10%)
+2025-07-28T04:27:02Z Pre-synchronizing blockheaders, height: 240000 (~27.31%)
+2025-07-28T04:27:02Z Pre-synchronizing blockheaders, height: 242000 (~27.53%)
+2025-07-28T04:27:02Z Pre-synchronizing blockheaders, height: 244000 (~27.75%)
+2025-07-28T04:27:03Z Pre-synchronizing blockheaders, height: 246000 (~27.97%)
+2025-07-28T04:27:03Z Pre-synchronizing blockheaders, height: 248000 (~28.19%)
+2025-07-28T04:27:03Z Pre-synchronizing blockheaders, height: 250000 (~28.40%)
+2025-07-28T04:27:03Z Pre-synchronizing blockheaders, height: 252000 (~28.61%)
+2025-07-28T04:27:04Z Pre-synchronizing blockheaders, height: 254000 (~28.82%)
+2025-07-28T04:27:04Z Pre-synchronizing blockheaders, height: 256000 (~29.03%)
+2025-07-28T04:27:04Z Pre-synchronizing blockheaders, height: 258000 (~29.25%)
+2025-07-28T04:27:05Z Pre-synchronizing blockheaders, height: 260000 (~29.46%)
+2025-07-28T04:27:05Z Pre-synchronizing blockheaders, height: 262000 (~29.67%)
+2025-07-28T04:27:05Z Pre-synchronizing blockheaders, height: 264000 (~29.88%)
+2025-07-28T04:27:05Z Pre-synchronizing blockheaders, height: 266000 (~30.08%)
+2025-07-28T04:27:06Z Pre-synchronizing blockheaders, height: 268000 (~30.29%)
+2025-07-28T04:27:06Z Pre-synchronizing blockheaders, height: 270000 (~30.51%)
+2025-07-28T04:27:06Z Pre-synchronizing blockheaders, height: 272000 (~30.72%)
+2025-07-28T04:27:06Z Pre-synchronizing blockheaders, height: 274000 (~30.93%)
+2025-07-28T04:27:07Z Pre-synchronizing blockheaders, height: 276000 (~31.14%)
+2025-07-28T04:27:07Z Pre-synchronizing blockheaders, height: 278000 (~31.36%)
+2025-07-28T04:27:07Z Pre-synchronizing blockheaders, height: 280000 (~31.57%)
+2025-07-28T04:27:08Z Pre-synchronizing blockheaders, height: 282000 (~31.78%)
+2025-07-28T04:27:08Z Pre-synchronizing blockheaders, height: 284000 (~31.99%)
+2025-07-28T04:27:08Z Pre-synchronizing blockheaders, height: 286000 (~32.21%)
+2025-07-28T04:27:08Z Pre-synchronizing blockheaders, height: 288000 (~32.42%)
+2025-07-28T04:27:09Z Pre-synchronizing blockheaders, height: 290000 (~32.64%)
+2025-07-28T04:27:09Z Pre-synchronizing blockheaders, height: 292000 (~32.85%)
+2025-07-28T04:27:09Z Pre-synchronizing blockheaders, height: 294000 (~33.06%)
+2025-07-28T04:27:09Z Pre-synchronizing blockheaders, height: 296000 (~33.28%)
+2025-07-28T04:27:10Z Pre-synchronizing blockheaders, height: 298000 (~33.49%)
+2025-07-28T04:27:10Z Pre-synchronizing blockheaders, height: 300000 (~33.71%)
+2025-07-28T04:27:10Z Pre-synchronizing blockheaders, height: 302000 (~33.92%)
+2025-07-28T04:27:11Z Pre-synchronizing blockheaders, height: 304000 (~34.14%)
+2025-07-28T04:27:11Z Pre-synchronizing blockheaders, height: 306000 (~34.36%)
+2025-07-28T04:27:11Z Pre-synchronizing blockheaders, height: 308000 (~34.56%)
+2025-07-28T04:27:11Z Pre-synchronizing blockheaders, height: 310000 (~34.78%)
+2025-07-28T04:27:12Z Pre-synchronizing blockheaders, height: 312000 (~35.00%)
+2025-07-28T04:27:12Z Pre-synchronizing blockheaders, height: 314000 (~35.22%)
+2025-07-28T04:27:12Z Pre-synchronizing blockheaders, height: 316000 (~35.44%)
+2025-07-28T04:27:13Z Pre-synchronizing blockheaders, height: 318000 (~35.65%)
+2025-07-28T04:27:13Z Pre-synchronizing blockheaders, height: 320000 (~35.87%)
+2025-07-28T04:27:13Z Pre-synchronizing blockheaders, height: 322000 (~36.08%)
+2025-07-28T04:27:14Z Pre-synchronizing blockheaders, height: 324000 (~36.30%)
+2025-07-28T04:27:14Z Pre-synchronizing blockheaders, height: 326000 (~36.52%)
+2025-07-28T04:27:14Z Pre-synchronizing blockheaders, height: 328000 (~36.74%)
+2025-07-28T04:27:15Z Pre-synchronizing blockheaders, height: 330000 (~36.96%)
+2025-07-28T04:27:16Z Pre-synchronizing blockheaders, height: 332000 (~37.19%)
+2025-07-28T04:27:16Z Pre-synchronizing blockheaders, height: 334000 (~37.41%)
+2025-07-28T04:27:16Z Pre-synchronizing blockheaders, height: 336000 (~37.64%)
+2025-07-28T04:27:18Z Pre-synchronizing blockheaders, height: 338000 (~37.85%)
+2025-07-28T04:27:18Z Pre-synchronizing blockheaders, height: 340000 (~38.08%)
+2025-07-28T04:27:18Z Pre-synchronizing blockheaders, height: 342000 (~38.30%)
+2025-07-28T04:27:19Z Pre-synchronizing blockheaders, height: 344000 (~38.52%)
+2025-07-28T04:27:19Z Pre-synchronizing blockheaders, height: 346000 (~38.74%)
+2025-07-28T04:27:19Z Pre-synchronizing blockheaders, height: 348000 (~38.96%)
+2025-07-28T04:27:19Z Pre-synchronizing blockheaders, height: 350000 (~39.18%)
+2025-07-28T04:27:20Z Pre-synchronizing blockheaders, height: 352000 (~39.41%)
+2025-07-28T04:27:20Z Pre-synchronizing blockheaders, height: 354000 (~39.63%)
+2025-07-28T04:27:20Z Pre-synchronizing blockheaders, height: 356000 (~39.86%)
+2025-07-28T04:27:20Z Pre-synchronizing blockheaders, height: 358000 (~40.08%)
+2025-07-28T04:27:21Z Pre-synchronizing blockheaders, height: 360000 (~40.31%)
+2025-07-28T04:27:21Z Pre-synchronizing blockheaders, height: 362000 (~40.53%)
+2025-07-28T04:27:21Z Pre-synchronizing blockheaders, height: 364000 (~40.75%)
+2025-07-28T04:27:22Z Pre-synchronizing blockheaders, height: 366000 (~40.97%)
+2025-07-28T04:27:22Z Pre-synchronizing blockheaders, height: 368000 (~41.19%)
+2025-07-28T04:27:22Z Pre-synchronizing blockheaders, height: 370000 (~41.42%)
+2025-07-28T04:27:22Z Pre-synchronizing blockheaders, height: 372000 (~41.64%)
+2025-07-28T04:27:23Z Pre-synchronizing blockheaders, height: 374000 (~41.86%)
+2025-07-28T04:27:23Z Pre-synchronizing blockheaders, height: 376000 (~42.08%)
+2025-07-28T04:27:23Z Pre-synchronizing blockheaders, height: 378000 (~42.30%)
+2025-07-28T04:27:23Z Pre-synchronizing blockheaders, height: 380000 (~42.52%)
+2025-07-28T04:27:24Z Pre-synchronizing blockheaders, height: 382000 (~42.74%)
+2025-07-28T04:27:24Z Pre-synchronizing blockheaders, height: 384000 (~42.96%)
+2025-07-28T04:27:24Z Pre-synchronizing blockheaders, height: 386000 (~43.18%)
+2025-07-28T04:27:25Z Pre-synchronizing blockheaders, height: 388000 (~43.39%)
+2025-07-28T04:27:25Z Pre-synchronizing blockheaders, height: 390000 (~43.60%)
+2025-07-28T04:27:25Z Pre-synchronizing blockheaders, height: 392000 (~43.82%)
+2025-07-28T04:27:25Z Pre-synchronizing blockheaders, height: 394000 (~44.03%)
+2025-07-28T04:27:26Z Pre-synchronizing blockheaders, height: 396000 (~44.24%)
+2025-07-28T04:27:26Z Pre-synchronizing blockheaders, height: 398000 (~44.45%)
+2025-07-28T04:27:26Z Pre-synchronizing blockheaders, height: 400000 (~44.67%)
+2025-07-28T04:27:26Z Pre-synchronizing blockheaders, height: 402000 (~44.89%)
+2025-07-28T04:27:27Z Pre-synchronizing blockheaders, height: 404000 (~45.11%)
+2025-07-28T04:27:27Z Pre-synchronizing blockheaders, height: 406000 (~45.33%)
+2025-07-28T04:27:27Z Pre-synchronizing blockheaders, height: 408000 (~45.55%)
+2025-07-28T04:27:28Z Pre-synchronizing blockheaders, height: 410000 (~45.77%)
+2025-07-28T04:27:28Z Pre-synchronizing blockheaders, height: 412000 (~45.99%)
+2025-07-28T04:27:28Z Pre-synchronizing blockheaders, height: 414000 (~46.21%)
+2025-07-28T04:27:28Z Pre-synchronizing blockheaders, height: 416000 (~46.44%)
+2025-07-28T04:27:29Z Pre-synchronizing blockheaders, height: 418000 (~46.65%)
+2025-07-28T04:27:29Z Pre-synchronizing blockheaders, height: 420000 (~46.88%)
+2025-07-28T04:27:29Z Pre-synchronizing blockheaders, height: 422000 (~47.10%)
+2025-07-28T04:27:29Z Pre-synchronizing blockheaders, height: 424000 (~47.32%)
+2025-07-28T04:27:30Z Pre-synchronizing blockheaders, height: 426000 (~47.54%)
+2025-07-28T04:27:30Z Pre-synchronizing blockheaders, height: 428000 (~47.76%)
+2025-07-28T04:27:30Z Pre-synchronizing blockheaders, height: 430000 (~47.98%)
+2025-07-28T04:27:30Z Pre-synchronizing blockheaders, height: 432000 (~48.20%)
+2025-07-28T04:27:31Z Pre-synchronizing blockheaders, height: 434000 (~48.42%)
+2025-07-28T04:27:31Z Pre-synchronizing blockheaders, height: 436000 (~48.64%)
+2025-07-28T04:27:31Z Pre-synchronizing blockheaders, height: 438000 (~48.86%)
+2025-07-28T04:27:31Z Pre-synchronizing blockheaders, height: 440000 (~49.08%)
+2025-07-28T04:27:32Z Pre-synchronizing blockheaders, height: 442000 (~49.30%)
+2025-07-28T04:27:32Z Pre-synchronizing blockheaders, height: 444000 (~49.52%)
+2025-07-28T04:27:32Z Pre-synchronizing blockheaders, height: 446000 (~49.73%)
+2025-07-28T04:27:33Z Pre-synchronizing blockheaders, height: 448000 (~49.95%)
+2025-07-28T04:27:33Z Pre-synchronizing blockheaders, height: 450000 (~50.16%)
+2025-07-28T04:27:33Z Pre-synchronizing blockheaders, height: 452000 (~50.37%)
+2025-07-28T04:27:33Z Pre-synchronizing blockheaders, height: 454000 (~50.59%)
+2025-07-28T04:27:34Z Pre-synchronizing blockheaders, height: 456000 (~50.81%)
+2025-07-28T04:27:34Z Pre-synchronizing blockheaders, height: 458000 (~51.03%)
+2025-07-28T04:27:34Z Pre-synchronizing blockheaders, height: 460000 (~51.25%)
+2025-07-28T04:27:34Z Pre-synchronizing blockheaders, height: 462000 (~51.47%)
+2025-07-28T04:27:35Z Pre-synchronizing blockheaders, height: 464000 (~51.69%)
+2025-07-28T04:27:35Z Pre-synchronizing blockheaders, height: 466000 (~51.90%)
+2025-07-28T04:27:35Z Pre-synchronizing blockheaders, height: 468000 (~52.12%)
+2025-07-28T04:27:35Z Pre-synchronizing blockheaders, height: 470000 (~52.32%)
+2025-07-28T04:27:36Z Pre-synchronizing blockheaders, height: 472000 (~52.54%)
+2025-07-28T04:27:36Z Pre-synchronizing blockheaders, height: 474000 (~52.76%)
+2025-07-28T04:27:36Z Pre-synchronizing blockheaders, height: 476000 (~52.98%)
+2025-07-28T04:27:37Z Pre-synchronizing blockheaders, height: 478000 (~53.19%)
+2025-07-28T04:27:37Z Pre-synchronizing blockheaders, height: 480000 (~53.41%)
+2025-07-28T04:27:37Z Pre-synchronizing blockheaders, height: 482000 (~53.64%)
+2025-07-28T04:27:37Z Pre-synchronizing blockheaders, height: 484000 (~53.85%)
+2025-07-28T04:27:38Z Pre-synchronizing blockheaders, height: 486000 (~54.05%)
+2025-07-28T04:27:38Z Pre-synchronizing blockheaders, height: 488000 (~54.27%)
+2025-07-28T04:27:38Z Pre-synchronizing blockheaders, height: 490000 (~54.49%)
+2025-07-28T04:27:38Z Pre-synchronizing blockheaders, height: 492000 (~54.69%)
+2025-07-28T04:27:39Z Pre-synchronizing blockheaders, height: 494000 (~54.92%)
+2025-07-28T04:27:39Z Pre-synchronizing blockheaders, height: 496000 (~55.14%)
+2025-07-28T04:27:39Z Pre-synchronizing blockheaders, height: 498000 (~55.35%)
+2025-07-28T04:27:39Z Pre-synchronizing blockheaders, height: 500000 (~55.55%)
+2025-07-28T04:27:40Z Pre-synchronizing blockheaders, height: 502000 (~55.77%)
+2025-07-28T04:27:40Z Pre-synchronizing blockheaders, height: 504000 (~55.97%)
+2025-07-28T04:27:40Z Pre-synchronizing blockheaders, height: 506000 (~56.18%)
+2025-07-28T04:27:41Z Pre-synchronizing blockheaders, height: 508000 (~56.39%)
+2025-07-28T04:27:41Z Pre-synchronizing blockheaders, height: 510000 (~56.60%)
+2025-07-28T04:27:41Z Pre-synchronizing blockheaders, height: 512000 (~56.82%)
+2025-07-28T04:27:41Z Pre-synchronizing blockheaders, height: 514000 (~57.03%)
+2025-07-28T04:27:42Z Pre-synchronizing blockheaders, height: 516000 (~57.25%)
+2025-07-28T04:27:42Z Pre-synchronizing blockheaders, height: 518000 (~57.46%)
+2025-07-28T04:27:42Z Pre-synchronizing blockheaders, height: 520000 (~57.68%)
+2025-07-28T04:27:42Z Pre-synchronizing blockheaders, height: 522000 (~57.90%)
+2025-07-28T04:27:43Z Pre-synchronizing blockheaders, height: 524000 (~58.11%)
+2025-07-28T04:27:44Z Pre-synchronizing blockheaders, height: 526000 (~58.32%)
+2025-07-28T04:27:44Z Pre-synchronizing blockheaders, height: 528000 (~58.54%)
+2025-07-28T04:27:45Z Pre-synchronizing blockheaders, height: 530000 (~58.75%)
+2025-07-28T04:27:45Z Pre-synchronizing blockheaders, height: 532000 (~58.98%)
+2025-07-28T04:27:46Z Pre-synchronizing blockheaders, height: 534000 (~59.19%)
+2025-07-28T04:27:47Z Pre-synchronizing blockheaders, height: 536000 (~59.40%)
+2025-07-28T04:27:47Z Pre-synchronizing blockheaders, height: 538000 (~59.61%)
+2025-07-28T04:27:48Z Pre-synchronizing blockheaders, height: 540000 (~59.83%)
+2025-07-28T04:27:49Z Pre-synchronizing blockheaders, height: 542000 (~60.05%)
+2025-07-28T04:27:49Z Pre-synchronizing blockheaders, height: 544000 (~60.26%)
+2025-07-28T04:27:50Z Pre-synchronizing blockheaders, height: 546000 (~60.49%)
+2025-07-28T04:27:50Z Pre-synchronizing blockheaders, height: 548000 (~60.71%)
+2025-07-28T04:27:51Z Pre-synchronizing blockheaders, height: 550000 (~60.94%)
+2025-07-28T04:27:51Z Pre-synchronizing blockheaders, height: 552000 (~61.18%)
+2025-07-28T04:27:52Z Pre-synchronizing blockheaders, height: 554000 (~61.42%)
+2025-07-28T04:27:52Z Pre-synchronizing blockheaders, height: 556000 (~61.64%)
+2025-07-28T04:27:52Z Pre-synchronizing blockheaders, height: 558000 (~61.85%)
+2025-07-28T04:27:53Z Pre-synchronizing blockheaders, height: 560000 (~62.07%)
+2025-07-28T04:27:53Z Pre-synchronizing blockheaders, height: 562000 (~62.29%)
+2025-07-28T04:27:54Z Pre-synchronizing blockheaders, height: 564000 (~62.51%)
+2025-07-28T04:27:54Z Pre-synchronizing blockheaders, height: 566000 (~62.73%)
+2025-07-28T04:27:55Z Pre-synchronizing blockheaders, height: 568000 (~62.95%)
+2025-07-28T04:27:55Z Pre-synchronizing blockheaders, height: 570000 (~63.17%)
+2025-07-28T04:27:55Z Pre-synchronizing blockheaders, height: 572000 (~63.39%)
+2025-07-28T04:27:56Z Pre-synchronizing blockheaders, height: 574000 (~63.61%)
+2025-07-28T04:27:56Z Pre-synchronizing blockheaders, height: 576000 (~63.83%)
+2025-07-28T04:27:57Z Pre-synchronizing blockheaders, height: 578000 (~64.04%)
+2025-07-28T04:27:57Z Pre-synchronizing blockheaders, height: 580000 (~64.26%)
+2025-07-28T04:27:57Z Pre-synchronizing blockheaders, height: 582000 (~64.48%)
+2025-07-28T04:27:58Z Pre-synchronizing blockheaders, height: 584000 (~64.68%)
+2025-07-28T04:27:58Z Pre-synchronizing blockheaders, height: 586000 (~64.90%)
+2025-07-28T04:27:59Z Pre-synchronizing blockheaders, height: 588000 (~65.11%)
+2025-07-28T04:27:59Z Pre-synchronizing blockheaders, height: 590000 (~65.32%)
+2025-07-28T04:28:00Z Pre-synchronizing blockheaders, height: 592000 (~65.54%)
+2025-07-28T04:28:00Z Pre-synchronizing blockheaders, height: 594000 (~65.75%)
+2025-07-28T04:28:00Z Pre-synchronizing blockheaders, height: 596000 (~65.96%)
+2025-07-28T04:28:01Z Pre-synchronizing blockheaders, height: 598000 (~66.18%)
+2025-07-28T04:28:01Z Pre-synchronizing blockheaders, height: 600000 (~66.39%)
+2025-07-28T04:28:01Z Pre-synchronizing blockheaders, height: 602000 (~66.62%)
+2025-07-28T04:28:02Z Pre-synchronizing blockheaders, height: 604000 (~66.84%)
+2025-07-28T04:28:02Z Pre-synchronizing blockheaders, height: 606000 (~67.06%)
+2025-07-28T04:28:02Z Pre-synchronizing blockheaders, height: 608000 (~67.28%)
+2025-07-28T04:28:03Z Pre-synchronizing blockheaders, height: 610000 (~67.50%)
+2025-07-28T04:28:03Z Pre-synchronizing blockheaders, height: 612000 (~67.71%)
+2025-07-28T04:28:03Z Pre-synchronizing blockheaders, height: 614000 (~67.92%)
+2025-07-28T04:28:03Z Pre-synchronizing blockheaders, height: 616000 (~68.14%)
+2025-07-28T04:28:04Z Pre-synchronizing blockheaders, height: 618000 (~68.36%)
+2025-07-28T04:28:04Z Pre-synchronizing blockheaders, height: 620000 (~68.58%)
+2025-07-28T04:28:04Z Pre-synchronizing blockheaders, height: 622000 (~68.81%)
+2025-07-28T04:28:04Z Pre-synchronizing blockheaders, height: 624000 (~69.04%)
+2025-07-28T04:28:05Z Pre-synchronizing blockheaders, height: 626000 (~69.25%)
+2025-07-28T04:28:05Z Pre-synchronizing blockheaders, height: 628000 (~69.47%)
+2025-07-28T04:28:05Z Pre-synchronizing blockheaders, height: 630000 (~69.68%)
+2025-07-28T04:28:05Z Pre-synchronizing blockheaders, height: 632000 (~69.93%)
+2025-07-28T04:28:06Z Pre-synchronizing blockheaders, height: 634000 (~70.14%)
+2025-07-28T04:28:06Z Pre-synchronizing blockheaders, height: 636000 (~70.36%)
+2025-07-28T04:28:06Z Pre-synchronizing blockheaders, height: 638000 (~70.57%)
+2025-07-28T04:28:07Z Pre-synchronizing blockheaders, height: 640000 (~70.79%)
+2025-07-28T04:28:07Z Pre-synchronizing blockheaders, height: 642000 (~71.01%)
+2025-07-28T04:28:07Z Pre-synchronizing blockheaders, height: 644000 (~71.23%)
+2025-07-28T04:28:07Z Pre-synchronizing blockheaders, height: 646000 (~71.45%)
+2025-07-28T04:28:08Z Pre-synchronizing blockheaders, height: 648000 (~71.67%)
+2025-07-28T04:28:08Z Pre-synchronizing blockheaders, height: 650000 (~71.88%)
+2025-07-28T04:28:08Z Pre-synchronizing blockheaders, height: 652000 (~72.10%)
+2025-07-28T04:28:08Z Pre-synchronizing blockheaders, height: 654000 (~72.32%)
+2025-07-28T04:28:09Z Pre-synchronizing blockheaders, height: 656000 (~72.56%)
+2025-07-28T04:28:09Z Pre-synchronizing blockheaders, height: 658000 (~72.77%)
+2025-07-28T04:28:09Z Pre-synchronizing blockheaders, height: 660000 (~72.99%)
+2025-07-28T04:28:10Z Pre-synchronizing blockheaders, height: 662000 (~73.21%)
+2025-07-28T04:28:10Z Pre-synchronizing blockheaders, height: 664000 (~73.43%)
+2025-07-28T04:28:10Z Pre-synchronizing blockheaders, height: 666000 (~73.64%)
+2025-07-28T04:28:10Z Pre-synchronizing blockheaders, height: 668000 (~73.86%)
+2025-07-28T04:28:11Z Pre-synchronizing blockheaders, height: 670000 (~74.07%)
+2025-07-28T04:28:11Z Pre-synchronizing blockheaders, height: 672000 (~74.30%)
+2025-07-28T04:28:11Z Pre-synchronizing blockheaders, height: 674000 (~74.52%)
+2025-07-28T04:28:12Z Pre-synchronizing blockheaders, height: 676000 (~74.73%)
+2025-07-28T04:28:12Z Pre-synchronizing blockheaders, height: 678000 (~74.95%)
+2025-07-28T04:28:12Z Pre-synchronizing blockheaders, height: 680000 (~75.18%)
+2025-07-28T04:28:12Z Pre-synchronizing blockheaders, height: 682000 (~75.40%)
+2025-07-28T04:28:13Z Pre-synchronizing blockheaders, height: 684000 (~75.61%)
+2025-07-28T04:28:13Z Pre-synchronizing blockheaders, height: 686000 (~75.86%)
+2025-07-28T04:28:13Z Pre-synchronizing blockheaders, height: 688000 (~76.09%)
+2025-07-28T04:28:13Z Pre-synchronizing blockheaders, height: 690000 (~76.38%)
+2025-07-28T04:28:14Z Pre-synchronizing blockheaders, height: 692000 (~76.60%)
+2025-07-28T04:28:14Z Pre-synchronizing blockheaders, height: 694000 (~76.81%)
+2025-07-28T04:28:14Z Pre-synchronizing blockheaders, height: 696000 (~77.02%)
+2025-07-28T04:28:15Z Pre-synchronizing blockheaders, height: 698000 (~77.23%)
+2025-07-28T04:28:15Z Pre-synchronizing blockheaders, height: 700000 (~77.44%)
+2025-07-28T04:28:15Z Pre-synchronizing blockheaders, height: 702000 (~77.66%)
+2025-07-28T04:28:15Z Pre-synchronizing blockheaders, height: 704000 (~77.87%)
+2025-07-28T04:28:16Z Pre-synchronizing blockheaders, height: 706000 (~78.09%)
+2025-07-28T04:28:16Z Pre-synchronizing blockheaders, height: 708000 (~78.30%)
+2025-07-28T04:28:16Z Pre-synchronizing blockheaders, height: 710000 (~78.51%)
+2025-07-28T04:28:16Z Pre-synchronizing blockheaders, height: 712000 (~78.74%)
+2025-07-28T04:28:17Z Pre-synchronizing blockheaders, height: 714000 (~78.94%)
+2025-07-28T04:28:17Z Pre-synchronizing blockheaders, height: 716000 (~79.17%)
+2025-07-28T04:28:17Z Pre-synchronizing blockheaders, height: 718000 (~79.39%)
+2025-07-28T04:28:18Z Pre-synchronizing blockheaders, height: 720000 (~79.59%)
+2025-07-28T04:28:18Z Pre-synchronizing blockheaders, height: 722000 (~79.82%)
+2025-07-28T04:28:19Z Pre-synchronizing blockheaders, height: 724000 (~80.03%)
+2025-07-28T04:28:19Z Pre-synchronizing blockheaders, height: 726000 (~80.25%)
+2025-07-28T04:28:20Z Pre-synchronizing blockheaders, height: 728000 (~80.47%)
+2025-07-28T04:28:21Z Pre-synchronizing blockheaders, height: 730000 (~80.69%)
+2025-07-28T04:28:22Z Pre-synchronizing blockheaders, height: 732000 (~80.91%)
+2025-07-28T04:28:22Z Pre-synchronizing blockheaders, height: 734000 (~81.12%)
+2025-07-28T04:28:22Z Pre-synchronizing blockheaders, height: 736000 (~81.33%)
+2025-07-28T04:28:22Z Pre-synchronizing blockheaders, height: 738000 (~81.56%)
+2025-07-28T04:28:23Z Pre-synchronizing blockheaders, height: 740000 (~81.78%)
+2025-07-28T04:28:23Z Pre-synchronizing blockheaders, height: 742000 (~82.01%)
+2025-07-28T04:28:23Z Pre-synchronizing blockheaders, height: 744000 (~82.23%)
+2025-07-28T04:28:24Z Pre-synchronizing blockheaders, height: 746000 (~82.46%)
+2025-07-28T04:28:24Z Pre-synchronizing blockheaders, height: 748000 (~82.68%)
+2025-07-28T04:28:24Z Pre-synchronizing blockheaders, height: 750000 (~82.90%)
+2025-07-28T04:28:26Z Synchronizing blockheaders, height: 41 (~0.00%)
+2025-07-28T04:28:27Z Synchronizing blockheaders, height: 2041 (~0.23%)
+2025-07-28T04:28:27Z Synchronizing blockheaders, height: 4041 (~0.46%)
+2025-07-28T04:28:27Z Synchronizing blockheaders, height: 6041 (~0.70%)
+2025-07-28T04:28:27Z Synchronizing blockheaders, height: 8041 (~0.93%)
+2025-07-28T04:28:28Z Synchronizing blockheaders, height: 10041 (~1.16%)
+2025-07-28T04:28:28Z Synchronizing blockheaders, height: 12041 (~1.39%)
+2025-07-28T04:28:28Z Synchronizing blockheaders, height: 14041 (~1.62%)
+2025-07-28T04:28:29Z Synchronizing blockheaders, height: 16041 (~1.85%)
+2025-07-28T04:28:29Z Synchronizing blockheaders, height: 18041 (~2.09%)
+2025-07-28T04:28:29Z Synchronizing blockheaders, height: 20041 (~2.32%)
+2025-07-28T04:28:29Z Synchronizing blockheaders, height: 22041 (~2.57%)
+2025-07-28T04:28:30Z Synchronizing blockheaders, height: 24041 (~2.81%)
+2025-07-28T04:28:30Z Synchronizing blockheaders, height: 26041 (~3.05%)
+2025-07-28T04:28:30Z Synchronizing blockheaders, height: 28041 (~3.29%)
+2025-07-28T04:28:30Z Synchronizing blockheaders, height: 30041 (~3.53%)
+2025-07-28T04:28:31Z Synchronizing blockheaders, height: 32041 (~3.76%)
+2025-07-28T04:28:31Z Synchronizing blockheaders, height: 34041 (~4.00%)
+2025-07-28T04:28:31Z Synchronizing blockheaders, height: 36041 (~4.23%)
+2025-07-28T04:28:31Z Synchronizing blockheaders, height: 38041 (~4.46%)
+2025-07-28T04:28:32Z Synchronizing blockheaders, height: 40041 (~4.70%)
+2025-07-28T04:28:32Z Synchronizing blockheaders, height: 42041 (~4.93%)
+2025-07-28T04:28:32Z Synchronizing blockheaders, height: 44041 (~5.16%)
+2025-07-28T04:28:33Z Synchronizing blockheaders, height: 46041 (~5.39%)
+2025-07-28T04:28:33Z Synchronizing blockheaders, height: 48041 (~5.62%)
+2025-07-28T04:28:33Z Synchronizing blockheaders, height: 50041 (~5.86%)
+2025-07-28T04:28:33Z Synchronizing blockheaders, height: 52041 (~6.08%)
+2025-07-28T04:28:34Z Synchronizing blockheaders, height: 54041 (~6.32%)
+2025-07-28T04:28:34Z Synchronizing blockheaders, height: 56041 (~6.55%)
+2025-07-28T04:28:34Z Synchronizing blockheaders, height: 58041 (~6.78%)
+2025-07-28T04:28:34Z Synchronizing blockheaders, height: 60041 (~7.01%)
+2025-07-28T04:28:35Z Synchronizing blockheaders, height: 62041 (~7.25%)
+2025-07-28T04:28:35Z Synchronizing blockheaders, height: 64041 (~7.48%)
+2025-07-28T04:28:35Z Synchronizing blockheaders, height: 66041 (~7.70%)
+2025-07-28T04:28:36Z Synchronizing blockheaders, height: 68041 (~7.92%)
+2025-07-28T04:28:36Z Synchronizing blockheaders, height: 70041 (~8.15%)
+2025-07-28T04:28:36Z Synchronizing blockheaders, height: 72041 (~8.38%)
+2025-07-28T04:28:36Z Synchronizing blockheaders, height: 74041 (~8.60%)
+2025-07-28T04:28:37Z Synchronizing blockheaders, height: 76041 (~8.83%)
+2025-07-28T04:28:37Z Synchronizing blockheaders, height: 78041 (~9.06%)
+2025-07-28T04:28:37Z Synchronizing blockheaders, height: 80041 (~9.29%)
+2025-07-28T04:28:37Z Synchronizing blockheaders, height: 82041 (~9.51%)
+2025-07-28T04:28:38Z Synchronizing blockheaders, height: 84041 (~9.74%)
+2025-07-28T04:28:38Z Synchronizing blockheaders, height: 86041 (~9.97%)
+2025-07-28T04:28:38Z Synchronizing blockheaders, height: 88041 (~10.19%)
+2025-07-28T04:28:38Z Synchronizing blockheaders, height: 90041 (~10.42%)
+2025-07-28T04:28:39Z Synchronizing blockheaders, height: 92041 (~10.64%)
+2025-07-28T04:28:39Z Synchronizing blockheaders, height: 94041 (~10.87%)
+2025-07-28T04:28:39Z Synchronizing blockheaders, height: 96041 (~11.09%)
+2025-07-28T04:28:40Z Synchronizing blockheaders, height: 98041 (~11.31%)
+2025-07-28T04:28:40Z Synchronizing blockheaders, height: 100041 (~11.54%)
+2025-07-28T04:28:40Z Synchronizing blockheaders, height: 102041 (~11.77%)
+2025-07-28T04:28:40Z Synchronizing blockheaders, height: 104041 (~12.00%)
+2025-07-28T04:28:41Z Synchronizing blockheaders, height: 106041 (~12.22%)
+2025-07-28T04:28:41Z Synchronizing blockheaders, height: 108041 (~12.45%)
+2025-07-28T04:28:41Z Synchronizing blockheaders, height: 110041 (~12.67%)
+2025-07-28T04:28:41Z Synchronizing blockheaders, height: 112041 (~12.89%)
+2025-07-28T04:28:42Z Synchronizing blockheaders, height: 114041 (~13.12%)
+2025-07-28T04:28:42Z Synchronizing blockheaders, height: 116041 (~13.35%)
+2025-07-28T04:28:42Z Synchronizing blockheaders, height: 118041 (~13.57%)
+2025-07-28T04:28:43Z Synchronizing blockheaders, height: 120041 (~13.80%)
+2025-07-28T04:28:43Z Synchronizing blockheaders, height: 122041 (~14.02%)
+2025-07-28T04:28:43Z Synchronizing blockheaders, height: 124041 (~14.24%)
+2025-07-28T04:28:43Z Synchronizing blockheaders, height: 126041 (~14.46%)
+2025-07-28T04:28:44Z Synchronizing blockheaders, height: 128041 (~14.67%)
+2025-07-28T04:28:44Z Synchronizing blockheaders, height: 130041 (~14.89%)
+2025-07-28T04:28:44Z Synchronizing blockheaders, height: 132041 (~15.11%)
+2025-07-28T04:28:44Z Synchronizing blockheaders, height: 134041 (~15.33%)
+2025-07-28T04:28:45Z Synchronizing blockheaders, height: 136041 (~15.55%)
+2025-07-28T04:28:45Z Synchronizing blockheaders, height: 138041 (~15.78%)
+2025-07-28T04:28:45Z Synchronizing blockheaders, height: 140041 (~16.01%)
+2025-07-28T04:28:46Z Synchronizing blockheaders, height: 142041 (~16.24%)
+2025-07-28T04:28:46Z Synchronizing blockheaders, height: 144041 (~16.47%)
+2025-07-28T04:28:46Z Synchronizing blockheaders, height: 146041 (~16.70%)
+2025-07-28T04:28:46Z Synchronizing blockheaders, height: 148041 (~16.93%)
+2025-07-28T04:28:47Z Synchronizing blockheaders, height: 150041 (~17.16%)
+2025-07-28T04:28:47Z Synchronizing blockheaders, height: 152041 (~17.40%)
+2025-07-28T04:28:47Z Synchronizing blockheaders, height: 154041 (~17.63%)
+2025-07-28T04:28:48Z Synchronizing blockheaders, height: 156041 (~17.86%)
+2025-07-28T04:28:48Z Synchronizing blockheaders, height: 158041 (~18.09%)
+2025-07-28T04:28:48Z Synchronizing blockheaders, height: 160041 (~18.31%)
+2025-07-28T04:28:48Z Synchronizing blockheaders, height: 162041 (~18.54%)
+2025-07-28T04:28:49Z Synchronizing blockheaders, height: 164041 (~18.77%)
+2025-07-28T04:28:49Z Synchronizing blockheaders, height: 166041 (~18.99%)
+2025-07-28T04:28:49Z Synchronizing blockheaders, height: 168041 (~19.22%)
+2025-07-28T04:28:49Z Synchronizing blockheaders, height: 170041 (~19.45%)
+2025-07-28T04:28:50Z Synchronizing blockheaders, height: 172041 (~19.68%)
+2025-07-28T04:28:50Z Synchronizing blockheaders, height: 174041 (~19.90%)
+2025-07-28T04:28:50Z Synchronizing blockheaders, height: 176041 (~20.13%)
+2025-07-28T04:28:51Z Synchronizing blockheaders, height: 178041 (~20.36%)
+2025-07-28T04:28:52Z Synchronizing blockheaders, height: 180041 (~20.59%)
+2025-07-28T04:28:53Z Synchronizing blockheaders, height: 182041 (~20.82%)
+2025-07-28T04:28:53Z Synchronizing blockheaders, height: 184041 (~21.05%)
+2025-07-28T04:28:53Z Synchronizing blockheaders, height: 186041 (~21.27%)
+2025-07-28T04:28:53Z Synchronizing blockheaders, height: 188041 (~21.50%)
+2025-07-28T04:28:54Z Synchronizing blockheaders, height: 190041 (~21.73%)
+2025-07-28T04:28:54Z Synchronizing blockheaders, height: 192041 (~21.95%)
+2025-07-28T04:28:54Z Synchronizing blockheaders, height: 194041 (~22.17%)
+2025-07-28T04:28:55Z Synchronizing blockheaders, height: 196041 (~22.40%)
+2025-07-28T04:28:55Z Synchronizing blockheaders, height: 198041 (~22.62%)
+2025-07-28T04:28:56Z Synchronizing blockheaders, height: 200041 (~22.85%)
+2025-07-28T04:28:56Z Synchronizing blockheaders, height: 202041 (~23.07%)
+2025-07-28T04:28:56Z Synchronizing blockheaders, height: 204041 (~23.30%)
+2025-07-28T04:28:56Z Synchronizing blockheaders, height: 206041 (~23.53%)
+2025-07-28T04:28:57Z Synchronizing blockheaders, height: 208041 (~23.75%)
+2025-07-28T04:28:57Z Synchronizing blockheaders, height: 210041 (~23.98%)
+2025-07-28T04:28:57Z Synchronizing blockheaders, height: 212041 (~24.21%)
+2025-07-28T04:28:58Z Synchronizing blockheaders, height: 214041 (~24.44%)
+2025-07-28T04:28:58Z Synchronizing blockheaders, height: 216041 (~24.67%)
+2025-07-28T04:28:58Z Synchronizing blockheaders, height: 218041 (~24.90%)
+2025-07-28T04:28:58Z Synchronizing blockheaders, height: 220041 (~25.13%)
+2025-07-28T04:28:59Z Synchronizing blockheaders, height: 222041 (~25.35%)
+2025-07-28T04:28:59Z Synchronizing blockheaders, height: 224041 (~25.57%)
+2025-07-28T04:28:59Z Synchronizing blockheaders, height: 226041 (~25.79%)
+2025-07-28T04:29:00Z Synchronizing blockheaders, height: 228041 (~26.00%)
+2025-07-28T04:29:00Z Synchronizing blockheaders, height: 230041 (~26.22%)
+2025-07-28T04:29:00Z Synchronizing blockheaders, height: 232041 (~26.44%)
+2025-07-28T04:29:00Z Synchronizing blockheaders, height: 234041 (~26.66%)
+2025-07-28T04:29:01Z Synchronizing blockheaders, height: 236041 (~26.88%)
+2025-07-28T04:29:01Z Synchronizing blockheaders, height: 238041 (~27.11%)
+2025-07-28T04:29:01Z Synchronizing blockheaders, height: 240041 (~27.32%)
+2025-07-28T04:29:01Z Synchronizing blockheaders, height: 242041 (~27.54%)
+2025-07-28T04:29:03Z Synchronizing blockheaders, height: 244041 (~27.76%)
+2025-07-28T04:29:03Z Synchronizing blockheaders, height: 246041 (~27.97%)
+2025-07-28T04:29:03Z Synchronizing blockheaders, height: 248041 (~28.19%)
+2025-07-28T04:29:04Z Synchronizing blockheaders, height: 250041 (~28.41%)
+2025-07-28T04:29:04Z Synchronizing blockheaders, height: 252041 (~28.62%)
+2025-07-28T04:29:04Z Synchronizing blockheaders, height: 254041 (~28.83%)
+2025-07-28T04:29:05Z Synchronizing blockheaders, height: 256041 (~29.04%)
+2025-07-28T04:29:05Z Synchronizing blockheaders, height: 258041 (~29.25%)
+2025-07-28T04:29:05Z Synchronizing blockheaders, height: 260041 (~29.46%)
+2025-07-28T04:29:05Z Synchronizing blockheaders, height: 262041 (~29.67%)
+2025-07-28T04:29:06Z Synchronizing blockheaders, height: 264041 (~29.88%)
+2025-07-28T04:29:06Z Synchronizing blockheaders, height: 266041 (~30.09%)
+2025-07-28T04:29:06Z Synchronizing blockheaders, height: 268041 (~30.29%)
+2025-07-28T04:29:06Z Synchronizing blockheaders, height: 270041 (~30.51%)
+2025-07-28T04:29:07Z Synchronizing blockheaders, height: 272041 (~30.73%)
+2025-07-28T04:29:07Z Synchronizing blockheaders, height: 274041 (~30.94%)
+2025-07-28T04:29:07Z Synchronizing blockheaders, height: 276041 (~31.15%)
+2025-07-28T04:29:08Z Synchronizing blockheaders, height: 278041 (~31.36%)
+2025-07-28T04:29:08Z Synchronizing blockheaders, height: 280041 (~31.57%)
+2025-07-28T04:29:08Z Synchronizing blockheaders, height: 282041 (~31.78%)
+2025-07-28T04:29:08Z Synchronizing blockheaders, height: 284041 (~32.00%)
+2025-07-28T04:29:09Z Synchronizing blockheaders, height: 286041 (~32.21%)
+2025-07-28T04:29:09Z Synchronizing blockheaders, height: 288041 (~32.42%)
+2025-07-28T04:29:09Z Synchronizing blockheaders, height: 290041 (~32.64%)
+2025-07-28T04:29:09Z Synchronizing blockheaders, height: 292041 (~32.85%)
+2025-07-28T04:29:10Z Synchronizing blockheaders, height: 294041 (~33.07%)
+2025-07-28T04:29:10Z Synchronizing blockheaders, height: 296041 (~33.28%)
+2025-07-28T04:29:10Z Synchronizing blockheaders, height: 298041 (~33.50%)
+2025-07-28T04:29:11Z Synchronizing blockheaders, height: 300041 (~33.71%)
+2025-07-28T04:29:11Z Synchronizing blockheaders, height: 302041 (~33.93%)
+2025-07-28T04:29:11Z Synchronizing blockheaders, height: 304041 (~34.14%)
+2025-07-28T04:29:11Z Synchronizing blockheaders, height: 306041 (~34.36%)
+2025-07-28T04:29:12Z Synchronizing blockheaders, height: 308041 (~34.57%)
+2025-07-28T04:29:12Z Synchronizing blockheaders, height: 310041 (~34.79%)
+2025-07-28T04:29:12Z Synchronizing blockheaders, height: 312041 (~35.01%)
+2025-07-28T04:29:13Z Synchronizing blockheaders, height: 314041 (~35.23%)
+2025-07-28T04:29:13Z Synchronizing blockheaders, height: 316041 (~35.44%)
+2025-07-28T04:29:13Z Synchronizing blockheaders, height: 318041 (~35.65%)
+2025-07-28T04:29:13Z Synchronizing blockheaders, height: 320041 (~35.87%)
+2025-07-28T04:29:14Z Synchronizing blockheaders, height: 322041 (~36.08%)
+2025-07-28T04:29:14Z Synchronizing blockheaders, height: 324041 (~36.30%)
+2025-07-28T04:29:14Z Synchronizing blockheaders, height: 326041 (~36.53%)
+2025-07-28T04:29:15Z Synchronizing blockheaders, height: 328041 (~36.75%)
+2025-07-28T04:29:15Z Synchronizing blockheaders, height: 330041 (~36.97%)
+2025-07-28T04:29:15Z Synchronizing blockheaders, height: 332041 (~37.19%)
+2025-07-28T04:29:15Z Synchronizing blockheaders, height: 334041 (~37.41%)
+2025-07-28T04:29:16Z Synchronizing blockheaders, height: 336041 (~37.64%)
+2025-07-28T04:29:16Z Synchronizing blockheaders, height: 338041 (~37.86%)
+2025-07-28T04:29:16Z Synchronizing blockheaders, height: 340041 (~38.08%)
+2025-07-28T04:29:16Z Synchronizing blockheaders, height: 342041 (~38.30%)
+2025-07-28T04:29:17Z Synchronizing blockheaders, height: 344041 (~38.52%)
+2025-07-28T04:29:17Z Synchronizing blockheaders, height: 346041 (~38.74%)
+2025-07-28T04:29:17Z Synchronizing blockheaders, height: 348041 (~38.97%)
+2025-07-28T04:29:18Z Synchronizing blockheaders, height: 350041 (~39.19%)
+2025-07-28T04:29:18Z Synchronizing blockheaders, height: 352041 (~39.41%)
+2025-07-28T04:29:18Z Synchronizing blockheaders, height: 354041 (~39.64%)
+2025-07-28T04:29:18Z Synchronizing blockheaders, height: 356041 (~39.86%)
+2025-07-28T04:29:19Z Synchronizing blockheaders, height: 358041 (~40.09%)
+2025-07-28T04:29:19Z Synchronizing blockheaders, height: 360041 (~40.31%)
+2025-07-28T04:29:19Z Synchronizing blockheaders, height: 362041 (~40.53%)
+2025-07-28T04:29:20Z Synchronizing blockheaders, height: 364041 (~40.75%)
+2025-07-28T04:29:20Z Synchronizing blockheaders, height: 366041 (~40.98%)
+2025-07-28T04:29:20Z Synchronizing blockheaders, height: 368041 (~41.20%)
+2025-07-28T04:29:21Z Synchronizing blockheaders, height: 370041 (~41.42%)
+2025-07-28T04:29:21Z Synchronizing blockheaders, height: 372041 (~41.64%)
+2025-07-28T04:29:21Z Synchronizing blockheaders, height: 374041 (~41.86%)
+2025-07-28T04:29:22Z Synchronizing blockheaders, height: 376041 (~42.08%)
+2025-07-28T04:29:23Z Synchronizing blockheaders, height: 378041 (~42.30%)
+2025-07-28T04:29:28Z Synchronizing blockheaders, height: 380041 (~42.53%)
+2025-07-28T04:29:27Z Synchronizing blockheaders, height: 382041 (~42.75%)
+2025-07-28T04:29:28Z Synchronizing blockheaders, height: 384041 (~42.96%)
+2025-07-28T04:29:30Z Synchronizing blockheaders, height: 386041 (~43.18%)
+2025-07-28T04:29:30Z Synchronizing blockheaders, height: 388041 (~43.39%)
+2025-07-28T04:29:33Z Synchronizing blockheaders, height: 390041 (~43.61%)
+2025-07-28T04:29:34Z Synchronizing blockheaders, height: 392041 (~43.82%)
+2025-07-28T04:29:36Z Synchronizing blockheaders, height: 394041 (~44.04%)
+2025-07-28T04:29:39Z Synchronizing blockheaders, height: 396041 (~44.25%)
+2025-07-28T04:29:41Z Synchronizing blockheaders, height: 398041 (~44.45%)
+2025-07-28T04:29:42Z Synchronizing blockheaders, height: 400041 (~44.68%)
+2025-07-28T04:29:45Z Synchronizing blockheaders, height: 402041 (~44.90%)
+
+
+
+
+
+2025-07-28T13:04:33Z Bitcoin Core version v24.0.1 (release build)
+2025-07-28T13:04:33Z Using the 'sse4(1way),sse41(4way),avx2(8way)' SHA256 implementation
+2025-07-28T13:04:33Z Using RdSeed as an additional entropy source
+2025-07-28T13:04:33Z Using RdRand as an additional entropy source
+2025-07-28T13:04:33Z Default data directory /home/bitcoin/.bitcoin
+2025-07-28T13:04:33Z Using data directory /home/bitcoin/.bitcoin
+2025-07-28T13:04:33Z Config file: /home/bitcoin/.bitcoin/bitcoin.conf (not found, skipping)
+2025-07-28T13:04:33Z Command-line arg: datadir="/home/bitcoin/.bitcoin"
+2025-07-28T13:04:33Z Command-line arg: printtoconsole=""
+2025-07-28T13:04:33Z Using at most 125 automatic connections (1048576 file descriptors available)
+2025-07-28T13:04:34Z Using 16 MiB out of 16 MiB requested for signature cache, able to store 524288 elements
+2025-07-28T13:04:34Z Using 16 MiB out of 16 MiB requested for script execution cache, able to store 524288 elements
+2025-07-28T13:04:34Z Script verification uses 7 additional threads
+2025-07-28T13:04:34Z scheduler thread start
+2025-07-28T13:04:34Z [libevent:warning] getaddrinfo: address family for nodename not supported
+2025-07-28T13:04:34Z Binding RPC on address ::1 port 8332 failed.
+2025-07-28T13:04:34Z [http] creating work queue of depth 16
+2025-07-28T13:04:34Z Using random cookie authentication.
+2025-07-28T13:04:34Z Generated RPC authentication cookie /home/bitcoin/.bitcoin/.cookie
+2025-07-28T13:04:34Z [http] starting 4 worker threads
+2025-07-28T13:04:34Z Using wallet directory /home/bitcoin/.bitcoin
+2025-07-28T13:04:34Z init message: Verifying wallet(s)…
+2025-07-28T13:04:34Z Using /16 prefix for IP bucketing
+2025-07-28T13:04:34Z init message: Loading P2P addresses…
+2025-07-28T13:04:34Z Loaded 6596 addresses from peers.dat  93ms
+2025-07-28T13:04:34Z init message: Loading banlist…
+2025-07-28T13:04:34Z SetNetworkActive: true
+2025-07-28T13:04:34Z Failed to read fee estimates from /home/bitcoin/.bitcoin/fee_estimates.dat. Continue anyway.
+2025-07-28T13:04:34Z Cache configuration:
+2025-07-28T13:04:34Z * Using 2.0 MiB for block index database
+2025-07-28T13:04:34Z * Using 8.0 MiB for chain state database
+2025-07-28T13:04:34Z * Using 440.0 MiB for in-memory UTXO set (plus up to 286.1 MiB of unused mempool space)
+2025-07-28T13:04:34Z init message: Loading block index…
+2025-07-28T13:04:34Z Assuming ancestors of block 00000000000000000009c97098b5295f7e5f183ac811fb5d1534040adb93cabd have valid signatures.
+2025-07-28T13:04:34Z Setting nMinimumChainWork=00000000000000000000000000000000000000003404ba0801921119f903495e
+2025-07-28T13:04:34Z Switching active chainstate to Chainstate [ibd] @ height -1 (null)
+2025-07-28T13:04:34Z Opening LevelDB in /home/bitcoin/.bitcoin/blocks/index
+2025-07-28T13:04:34Z Opened LevelDB successfully
+2025-07-28T13:04:34Z Using obfuscation key for /home/bitcoin/.bitcoin/blocks/index: 0000000000000000
+2025-07-28T13:04:34Z LoadBlockIndexDB: last block file = 0
+2025-07-28T13:04:34Z LoadBlockIndexDB: last block file info: CBlockFileInfo(blocks=0, size=0, heights=0...0, time=1970-01-01...1970-01-01)
+2025-07-28T13:04:34Z Checking all blk files are present...
+2025-07-28T13:04:34Z Initializing databases...
+2025-07-28T13:04:38Z Opening LevelDB in /home/bitcoin/.bitcoin/chainstate
+2025-07-28T13:04:39Z Opened LevelDB successfully
+2025-07-28T13:04:39Z Using obfuscation key for /home/bitcoin/.bitcoin/chainstate: 1be74abda54c3ce5
+2025-07-28T13:04:39Z init message: Verifying blocks…
+2025-07-28T13:04:39Z  block index            4344ms
+2025-07-28T13:04:39Z Setting NODE_NETWORK on non-prune mode
+2025-07-28T13:04:39Z loadblk thread start
+2025-07-28T13:04:39Z UpdateTip: new best=000000000019d6689c085ae165831e934ff763ae46a2a6c172b3f1b60a8ce26f height=0 version=0x00000001 log2_work=32.000022 tx=1 date='2009-01-03T18:15:05Z' progress=0.000000 cache=0.0MiB(0txo)
+2025-07-28T13:04:39Z block tree size = 1
+2025-07-28T13:04:39Z nBestHeight = 0
+2025-07-28T13:04:39Z Failed to open mempool file from disk. Continuing anyway.
+2025-07-28T13:04:39Z loadblk thread exit
+2025-07-28T13:04:39Z torcontrol thread start
+2025-07-28T13:04:39Z Bound to 127.0.0.1:8334
+2025-07-28T13:04:39Z Bound to [::]:8333
+2025-07-28T13:04:39Z Bound to 0.0.0.0:8333
+2025-07-28T13:04:39Z 0 block-relay-only anchors will be tried for connections.
+2025-07-28T13:04:39Z init message: Starting network threads…
+2025-07-28T13:04:39Z net thread start
+2025-07-28T13:04:39Z dnsseed thread start
+2025-07-28T13:04:39Z Waiting 300 seconds before querying DNS seeds.
+2025-07-28T13:04:39Z addcon thread start
+2025-07-28T13:04:39Z opencon thread start
+2025-07-28T13:04:39Z init message: Done loading
+2025-07-28T13:04:39Z msghand thread start
+2025-07-28T13:09:39Z Loading addresses from DNS seed seed.bitcoin.sprovoost.nl.
+2025-07-28T13:09:39Z Loading addresses from DNS seed seed.bitcoin.wiz.biz.
+2025-07-28T13:09:40Z Loading addresses from DNS seed dnsseed.bitcoin.dashjr.org.
+2025-07-28T13:09:41Z Waiting 300 seconds before querying DNS seeds.
+2025-07-28T13:14:41Z Loading addresses from DNS seed dnsseed.emzy.de.
+2025-07-28T13:14:42Z Loading addresses from DNS seed seed.btc.petertodd.org.
+2025-07-28T13:14:42Z Loading addresses from DNS seed seed.bitcoinstats.com.
+2025-07-28T13:14:42Z Waiting 300 seconds before querying DNS seeds.
+2025-07-28T13:19:42Z Loading addresses from DNS seed seed.bitcoin.sipa.be.
+2025-07-28T13:19:47Z Loading addresses from DNS seed dnsseed.bluematt.me.
+2025-07-28T13:19:47Z Loading addresses from DNS seed seed.bitcoin.jonasschnelli.ch.
+2025-07-28T13:19:49Z 208 addresses found from DNS seeds
+2025-07-28T13:19:49Z dnsseed thread exit
+2025-07-28T13:36:53Z Potential stale tip detected, will try using extra outbound peer (last tip update: 1934 seconds ago)
+2025-07-28T13:47:23Z Potential stale tip detected, will try using extra outbound peer (last tip update: 2564 seconds ago)
+2025-07-28T13:57:52Z Potential stale tip detected, will try using extra outbound peer (last tip update: 3193 seconds ago)
+
+
+
+
+
+2025-07-28T14:18:43Z Bitcoin Core version v24.0.1 (release build)
+2025-07-28T14:18:43Z Using the 'sse4(1way),sse41(4way),avx2(8way)' SHA256 implementation
+2025-07-28T14:18:43Z Using RdSeed as an additional entropy source
+2025-07-28T14:18:43Z Using RdRand as an additional entropy source
+2025-07-28T14:18:43Z Default data directory /home/bitcoin/.bitcoin
+2025-07-28T14:18:43Z Using data directory /home/bitcoin/.bitcoin
+2025-07-28T14:18:43Z Config file: /home/bitcoin/.bitcoin/bitcoin.conf (not found, skipping)
+2025-07-28T14:18:43Z Command-line arg: datadir="/home/bitcoin/.bitcoin"
+2025-07-28T14:18:43Z Command-line arg: printtoconsole=""
+2025-07-28T14:18:43Z Using at most 125 automatic connections (1048576 file descriptors available)
+2025-07-28T14:18:44Z Using 16 MiB out of 16 MiB requested for signature cache, able to store 524288 elements
+2025-07-28T14:18:44Z Using 16 MiB out of 16 MiB requested for script execution cache, able to store 524288 elements
+2025-07-28T14:18:44Z Script verification uses 7 additional threads
+2025-07-28T14:18:44Z scheduler thread start
+2025-07-28T14:18:44Z [libevent:warning] getaddrinfo: address family for nodename not supported
+2025-07-28T14:18:44Z Binding RPC on address ::1 port 8332 failed.
+2025-07-28T14:18:44Z [http] creating work queue of depth 16
+2025-07-28T14:18:44Z Using random cookie authentication.
+2025-07-28T14:18:44Z Generated RPC authentication cookie /home/bitcoin/.bitcoin/.cookie
+2025-07-28T14:18:44Z [http] starting 4 worker threads
+2025-07-28T14:18:44Z Using wallet directory /home/bitcoin/.bitcoin
+2025-07-28T14:18:44Z init message: Verifying wallet(s)…
+2025-07-28T14:18:44Z Using /16 prefix for IP bucketing
+2025-07-28T14:18:44Z init message: Loading P2P addresses…
+2025-07-28T14:18:44Z Loaded 6756 addresses from peers.dat  224ms
+2025-07-28T14:18:44Z init message: Loading banlist…
+2025-07-28T14:18:44Z SetNetworkActive: true
+2025-07-28T14:18:44Z Failed to read fee estimates from /home/bitcoin/.bitcoin/fee_estimates.dat. Continue anyway.
+2025-07-28T14:18:44Z Cache configuration:
+2025-07-28T14:18:44Z * Using 2.0 MiB for block index database
+2025-07-28T14:18:44Z * Using 8.0 MiB for chain state database
+2025-07-28T14:18:44Z * Using 440.0 MiB for in-memory UTXO set (plus up to 286.1 MiB of unused mempool space)
+2025-07-28T14:18:44Z init message: Loading block index…
+2025-07-28T14:18:44Z Assuming ancestors of block 00000000000000000009c97098b5295f7e5f183ac811fb5d1534040adb93cabd have valid signatures.
+2025-07-28T14:18:44Z Setting nMinimumChainWork=00000000000000000000000000000000000000003404ba0801921119f903495e
+2025-07-28T14:18:44Z Switching active chainstate to Chainstate [ibd] @ height -1 (null)
+2025-07-28T14:18:44Z Opening LevelDB in /home/bitcoin/.bitcoin/blocks/index
+2025-07-28T14:18:44Z Opened LevelDB successfully
+2025-07-28T14:18:44Z Using obfuscation key for /home/bitcoin/.bitcoin/blocks/index: 0000000000000000
+2025-07-28T14:18:44Z LoadBlockIndexDB: last block file = 0
+2025-07-28T14:18:44Z LoadBlockIndexDB: last block file info: CBlockFileInfo(blocks=0, size=0, heights=0...0, time=1970-01-01...1970-01-01)
+2025-07-28T14:18:44Z Checking all blk files are present...
+2025-07-28T14:18:44Z Initializing databases...
+2025-07-28T14:18:48Z Opening LevelDB in /home/bitcoin/.bitcoin/chainstate
+2025-07-28T14:18:48Z Opened LevelDB successfully
+2025-07-28T14:18:48Z Using obfuscation key for /home/bitcoin/.bitcoin/chainstate: 1be74abda54c3ce5
+2025-07-28T14:18:48Z init message: Verifying blocks…
+2025-07-28T14:18:48Z  block index            3733ms
+2025-07-28T14:18:48Z Setting NODE_NETWORK on non-prune mode
+2025-07-28T14:18:48Z loadblk thread start
+2025-07-28T14:18:48Z UpdateTip: new best=000000000019d6689c085ae165831e934ff763ae46a2a6c172b3f1b60a8ce26f height=0 version=0x00000001 log2_work=32.000022 tx=1 date='2009-01-03T18:15:05Z' progress=0.000000 cache=0.0MiB(0txo)
+2025-07-28T14:18:48Z block tree size = 1
+2025-07-28T14:18:48Z nBestHeight = 0
+2025-07-28T14:18:48Z Failed to open mempool file from disk. Continuing anyway.
+2025-07-28T14:18:48Z loadblk thread exit
+2025-07-28T14:18:48Z torcontrol thread start
+2025-07-28T14:18:48Z Bound to 127.0.0.1:8334
+2025-07-28T14:18:48Z Bound to [::]:8333
+2025-07-28T14:18:48Z Bound to 0.0.0.0:8333
+2025-07-28T14:18:48Z 0 block-relay-only anchors will be tried for connections.
+2025-07-28T14:18:48Z init message: Starting network threads…
+2025-07-28T14:18:48Z net thread start
+2025-07-28T14:18:48Z dnsseed thread start
+2025-07-28T14:18:48Z opencon thread start
+2025-07-28T14:18:48Z msghand thread start
+2025-07-28T14:18:48Z Waiting 300 seconds before querying DNS seeds.
+2025-07-28T14:18:48Z init message: Done loading
+2025-07-28T14:18:48Z addcon thread start
+2025-07-28T14:23:49Z Loading addresses from DNS seed seed.btc.petertodd.org.
+2025-07-28T14:24:00Z Loading addresses from DNS seed dnsseed.bluematt.me.
+2025-07-28T14:24:01Z Loading addresses from DNS seed dnsseed.bitcoin.dashjr.org.
+2025-07-28T14:24:01Z Waiting 300 seconds before querying DNS seeds.
+2025-07-28T14:29:02Z Loading addresses from DNS seed seed.bitcoin.sprovoost.nl.
+2025-07-28T14:29:02Z Loading addresses from DNS seed seed.bitcoinstats.com.
+2025-07-28T14:29:02Z Loading addresses from DNS seed seed.bitcoin.wiz.biz.
+2025-07-28T14:29:03Z Waiting 300 seconds before querying DNS seeds.
+2025-07-28T14:34:03Z Loading addresses from DNS seed seed.bitcoin.jonasschnelli.ch.
+2025-07-28T14:34:03Z Loading addresses from DNS seed seed.bitcoin.sipa.be.
+2025-07-28T14:34:04Z Loading addresses from DNS seed dnsseed.emzy.de.
+2025-07-28T14:34:04Z 231 addresses found from DNS seeds
+2025-07-28T14:34:04Z dnsseed thread exit
